@@ -1,143 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Min Thuta Naing's Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min Thuta Naing's Portfolio</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 
-  <!-- Optimize font loading -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Optimize font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Roboto Condensed full family -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Roboto Condensed full family -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <!-- Loads both Nunito and Roboto Condensed (all weights and styles) -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Loads both Nunito and Roboto Condensed (all weights and styles) -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body class="font-inter bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+  <body class="font-inter bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
 
-  <header class="fixed top-0 left-0 w-full bg-[#7D6E83] dark:bg-gray-800 shadow-md z-50">
-    <div class="container mx-auto flex items-center justify-between p-4">
-      <h1 class="text-xl font-semibold font-nunito text-white">Min Thuta Naing</h1>
+    <header class="fixed top-0 left-0 w-full h-16 bg-[#7D6E83] dark:bg-gray-800 shadow-md z-50">
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <h1 class="text-xl font-semibold font-nunito text-white">Min Thuta Naing</h1>
 
-      <nav>
-        <ul class="flex space-x-6 text-gray-100 items-center">
-          <li><a href="#about" class="hover:text-[#FFC4E1] transition">About</a></li>
-          <li><a href="#projects" class="hover:text-[#FFC4E1] transition">Projects</a></li>
-          <li><a href="#contact" class="hover:text-[#FFC4E1] transition">Papers</a></li>
-          <li>
-            <button id="theme-toggle" class="text-white hover:text-yellow-300 transition text-xl">
-              <i id="theme-icon" class="fas fa-moon"></i>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <nav>
+          <ul class="flex space-x-6 text-gray-100 font-nunito items-center">
+            <li><a href="about.html" class="hover:text-[#FFC4E1] transition">About</a></li>
+            <li><a href="projects.html" class="hover:text-[#FFC4E1] transition">Projects</a></li>
+            <li><a href="papers.html" class="hover:text-[#FFC4E1] transition">Papers</a></li>
+            <li>
+              <button id="theme-toggle" class="text-white hover:text-yellow-300 transition text-xl">
+                <i id="theme-icon" class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main class="pt-32 pb-32 min-h-screen bg-[#FEFCF3] dark:bg-gray-900 px-6 transition-colors duration-300">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
+    <main class="pt-32 pb-32 min-h-screen bg-[#FEFCF3] dark:bg-gray-900 px-6 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
 
-      <!-- Left Column (1/4) -->
-      <div class="md:w-1/4 w-full flex flex-col items-center gap-6">
-        <!-- Profile Photo -->
-        <div class="w-64 h-64 bg-white bg-opacity-30 backdrop-blur-md rounded-xl shadow-lg overflow-hidden dark:bg-opacity-10">
-          <img src="https://via.placeholder.com/192" alt="Profile Photo"
-            class="w-full h-full object-cover rounded-xl" />
+        <!-- Left Column (1/4) -->
+        <div class="md:w-1/4 w-full flex flex-col items-center gap-6">
+          <!-- Profile Photo -->
+          <div class="w-64 h-70 bg-white bg-opacity-30 backdrop-blur-md rounded overflow-hidden dark:bg-opacity-10">
+            <img src="./images/profile.JPG" alt="Profile Photo"
+              class="w-full h-full object-cover rounded-xl" />
+          </div>
+
+          <!-- Social Links -->
+          <div class="flex justify-center gap-6 text-2xl">
+            <a href="https://www.linkedin.com/in/min-thuta-naing-8282831bb/" target="_blank"
+              class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/min-thuta-naing" target="_blank"
+              class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.facebook.com/bisonsunrae?mibextid=wwXIfr" target="_blank"
+              class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="mailto:thutaminn118@gmail.com" 
+              class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+
         </div>
 
-        <!-- Social Links -->
-        <div class="flex justify-center gap-6 text-2xl">
-          <a href="https://www.linkedin.com/in/min-thuta-naing-8282831bb/" target="_blank"
-            class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/min-thuta-naing" target="_blank"
-            class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.facebook.com/bisonsunrae?mibextid=wwXIfr" target="_blank"
-            class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
-            <i class="fab fa-facebook"></i>
-          </a>
-          <a href="mailto:thutaminn118@gmail.com" 
-            class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
-            <i class="fas fa-envelope"></i>
-          </a>
+        <!-- Right Column (3/4) -->
+        <div class="md:w-3/4 w-full space-y-8">
+
+          <div> 
+            <h1 class="text-4xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Hi there!</h1>
+            <h1 class="text-3xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">I am Min Thuta Naing.</h1>
+          </div>
+
+          <!-- About Me -->
+          <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
+            <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">About Me</h2>
+            <p class="text-gray-700 dark:text-gray-300 font-nunito">
+              I am a third year Software Engineering student, currently studying at Mae Fah Luang University in Chaing Rai, Thailand. I am working on the research of the usage of generative AI in UIUX education. My area of interest is Usability and UIUX, DevOps, Machine learning and Artificial Intelligence. 
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
+            <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Education</h2>
+            <p class="text-gray-700 dark:text-gray-300 font-nunito">
+              2022 - Now    ...............Bachelor of Engineering in Software Engineering Programme
+            </p>
+          </div>
         </div>
 
       </div>
+    </main>
 
-      <!-- Right Column (3/4) -->
-      <div class="md:w-3/4 w-full space-y-8">
+    <footer>
+      <!-- Your footer here -->
+    </footer>
 
-        <div> 
-          <h1 class="text-4xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Hi there!</h1>
-          <h1 class="text-3xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">I am Min Thuta Naing.</h1>
-        </div>
+    <!-- Dark Mode Toggle Script -->
+    <script>
+      const toggleBtn = document.getElementById('theme-toggle');
+      const icon = document.getElementById('theme-icon');
 
-        <!-- About Me -->
-        <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
-          <h2 class="text-2xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">About Me</h2>
-          <p class="text-gray-700 dark:text-gray-300 font-nunito">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in metus ut nulla vestibulum dapibus non nec
-            justo. Aenean viverra, nulla in vulputate vulputate, metus ex egestas turpis, non sodales purus risus at
-            arcu.
-          </p>
-        </div>
+      // Load stored theme
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      }
 
-        <!-- Education -->
-        <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
-          <h2 class="text-2xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Education</h2>
-          <p class="text-gray-700 dark:text-gray-300 font-nunito">
-            2022 - Now    ...............Bachelor of Engineering in Software Engineering Programme
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-  <footer>
-    <!-- Your footer here -->
-  </footer>
-
-  <!-- Dark Mode Toggle Script -->
-  <script>
-    const toggleBtn = document.getElementById('theme-toggle');
-    const icon = document.getElementById('theme-icon');
-
-    // Load stored theme
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark');
-      icon.classList.remove('fa-moon');
-      icon.classList.add('fa-sun');
-    }
-
-    toggleBtn.addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      const isDark = document.documentElement.classList.contains('dark');
-      icon.classList.toggle('fa-moon', !isDark);
-      icon.classList.toggle('fa-sun', isDark);
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-  </script>
-</body>
+      toggleBtn.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+        const isDark = document.documentElement.classList.contains('dark');
+        icon.classList.toggle('fa-moon', !isDark);
+        icon.classList.toggle('fa-sun', isDark);
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      });
+    </script>
+  </body>
 
 </html>
