@@ -2,7 +2,9 @@
     background: radial-gradient(circle at 20% 30%, #bfdbfe 0%, transparent 60%),
                 radial-gradient(circle at 70% 40%, #bae6fd 0%, transparent 70%),
                 radial-gradient(circle at 50% 80%, #a5f3fc 0%, transparent 80%);
-    background-color: #e0f2fe;
+    /* background-color: #e0f2fe; */
+    background: url('./images/background.png') no-repeat center center fixed;
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -1,145 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Min Thuta Naing's Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Min Thuta Naing's Portfolio</title>
 
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-      }
-    </script>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 
-    <!-- Optimize font loading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optimize font loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Roboto Condensed full family -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Roboto Condensed full family -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <!-- Loads both Nunito and Roboto Condensed (all weights and styles) -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Loads both Nunito and Roboto Condensed (all weights and styles) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <body class="font-inter bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
 
-    <header class="fixed top-0 left-0 w-full h-16 bg-[#7D6E83] dark:bg-gray-800 shadow-md z-50">
-      <div class="container mx-auto flex items-center justify-between p-4">
-        <h1 class="text-xl font-semibold font-nunito text-white">Min Thuta Naing</h1>
 
-        <nav>
-          <ul class="flex space-x-6 text-gray-100 font-nunito items-center">
-            <li><a href="about.html" class="hover:text-[#FFC4E1] transition">About</a></li>
-            <li><a href="projects.html" class="hover:text-[#FFC4E1] transition">Projects</a></li>
-            <li><a href="papers.html" class="hover:text-[#FFC4E1] transition">Papers</a></li>
-            <li>
-              <button id="theme-toggle" class="text-white hover:text-yellow-300 transition text-xl">
-                <i id="theme-icon" class="fas fa-moon"></i>
-              </button>
-            </li>
-          </ul>
-        </nav>
+<body class="font-inter bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+
+  <!-- header of the page -->
+  <header class="fixed top-0 left-0 w-full h-16 bg-[#7D6E83] dark:bg-gray-800 shadow-md z-50">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <h1 class="text-xl font-semibold font-nunito text-white">Portfolio</h1>
+      <nav>
+        <ul class="flex space-x-6 text-gray-100 font-nunito items-center">
+          <li><a href="about.html" class="hover:text-[#FFC4E1] transition">About</a></li>
+          <li><a href="projects.html" class="hover:text-[#FFC4E1] transition">Projects</a></li>
+          <li><a href="papers.html" class="hover:text-[#FFC4E1] transition">Papers</a></li>
+          <li>
+            <button id="theme-toggle" class="text-white hover:text-yellow-300 transition text-xl">
+              <i id="theme-icon" class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-32 pb-32 min-h-screen bg-[#FEFCF3] dark:bg-gray-900 px-6 transition-colors duration-300">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
+
+      <!-- Left column (1/4) -->
+      <div class="md:w-1/4 w-full flex flex-col items-center gap-6">
+        <!-- Profile Photo -->
+        <div class="w-64 h-70 bg-white bg-opacity-30 backdrop-blur-md rounded overflow-hidden dark:bg-opacity-10">
+          <img src="./images/profile.JPG" alt="Profile Photo" class="w-full h-full object-cover rounded-xl" />
+        </div>
+        <!-- Social Links -->
+        <div class="flex justify-center gap-6 text-2xl">
+          <a href="https://www.linkedin.com/in/min-thuta-naing-8282831bb/" target="_blank"
+            class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/min-thuta-naing" target="_blank"
+            class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.facebook.com/bisonsunrae?mibextid=wwXIfr" target="_blank"
+            class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="mailto:thutaminn118@gmail.com"
+            class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
       </div>
-    </header>
 
-    <main class="pt-32 pb-32 min-h-screen bg-[#FEFCF3] dark:bg-gray-900 px-6 transition-colors duration-300">
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
+      <!-- Right column (3/4) -->
+      <div class="md:w-3/4 w-full space-y-8">
 
-        <!-- Left Column (1/4) -->
-        <div class="md:w-1/4 w-full flex flex-col items-center gap-6">
-          <!-- Profile Photo -->
-          <div class="w-64 h-70 bg-white bg-opacity-30 backdrop-blur-md rounded overflow-hidden dark:bg-opacity-10">
-            <img src="./images/profile.JPG" alt="Profile Photo"
-              class="w-full h-full object-cover rounded-xl" />
+        <!-- greeting words -->
+        <div>
+          <h1 id="greeting" class="text-4xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">
+            Hi there!
+          </h1>
+          <h1 class="text-3xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">I am Min Thuta Naing.
+          </h1>
+        </div>
+
+        <!-- About Me -->
+        <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
+          <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">About Me</h2>
+          <p class="text-gray-700 dark:text-gray-300 font-nunito text-justify">
+            I am a final year Software Engineering student, currently studying at Mae Fah Luang University in Chaing
+            Rai, Thailand. I am a motivated and collaborative person who always eager to learn new things.
+          </p>
+
+          <div class="pt-5 flex gap-6"> 
+            <!-- Buttons -->
+            <a href="/about.html" 
+              class="px-4 py-2 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+              More About Me
+            </a>
+            <a href="/projects.html" 
+              class="px-4 py-2 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+              Projects
+            </a>
+            <a href="/papers.html" 
+              class="px-4 py-2 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+              Published Papers
+            </a>
           </div>
+          
+        </div>
 
-          <!-- Social Links -->
-          <div class="flex justify-center gap-6 text-2xl">
-            <a href="https://www.linkedin.com/in/min-thuta-naing-8282831bb/" target="_blank"
-              class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/min-thuta-naing" target="_blank"
-              class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.facebook.com/bisonsunrae?mibextid=wwXIfr" target="_blank"
-              class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a href="mailto:thutaminn118@gmail.com" 
-              class="w-10 h-10 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
-              <i class="fas fa-envelope"></i>
-            </a>
+        <!-- Interest area -->
+        <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
+          <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Area of Interest</h2>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300 font-nunito text-left">
+            <span>✦ Web & Mobile Development</span>
+            <span>✦ DevOps</span>
+            <span>✦ UI/UX</span>
+            <span>✦ ML & AI</span>
           </div>
+        </div>
+
+        <!-- Education -->
+        <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
+          <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Education</h2>
+          <table class="text-gray-700 dark:text-gray-300 font-nunito w-full">
+            <tr>
+              <td class="pr-4 whitespace-nowrap align-top">2022 - Now</td>
+              <td>Bachelor of Engineering in Software Engineering Programme<br>Mae Fah Luang University<br>Chiang Rai,
+                Thailand</td>
+            </tr>
+          </table>
 
         </div>
 
-        <!-- Right Column (3/4) -->
-        <div class="md:w-3/4 w-full space-y-8">
-
-          <div> 
-            <h1 class="text-4xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Hi there!</h1>
-            <h1 class="text-3xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">I am Min Thuta Naing.</h1>
-          </div>
-
-          <!-- About Me -->
-          <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
-            <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">About Me</h2>
-            <p class="text-gray-700 dark:text-gray-300 font-nunito text-justify">
-              I am a third year Software Engineering student, currently studying at Mae Fah Luang University in Chaing Rai, Thailand. I am working on the research of the usage of generative AI in UIUX education. My area of interest is Usability and UIUX, DevOps, Machine learning and Artificial Intelligence. 
-            </p>
-          </div>
-
-          <!-- Education -->
-          <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
-            <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Education</h2>
-            <table class="text-gray-700 dark:text-gray-300 font-nunito w-full">
-              <tr>
-                <td class="pr-4 whitespace-nowrap align-top">2022 - Now</td>
-                <td>Bachelor of Engineering in Software Engineering Programme<br>Mae Fah Luang University<br>Chiang Rai, Thailand</td>
-              </tr>
-            </table>
-
-          </div>
-        </div>
-
       </div>
-    </main>
 
-    <footer>
-      <!-- Your footer here -->
-    </footer>
+    </div>
+  </main>
 
-    <!-- Dark Mode Toggle Script -->
-    <script>
-      const toggleBtn = document.getElementById('theme-toggle');
-      const icon = document.getElementById('theme-icon');
+  <footer>
+    <!-- Your footer here -->
+  </footer>
 
-      // Load stored theme
-      if (localStorage.getItem('theme') === 'dark') {
-        document.documentElement.classList.add('dark');
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const icon = document.getElementById('theme-icon');
+
+    // Load stored theme
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const isDark = document.documentElement.classList.contains('dark');
+      icon.classList.toggle('fa-moon', !isDark);
+      icon.classList.toggle('fa-sun', isDark);
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+
+  <script>
+    function updateGreeting() {
+      const hour = new Date().getHours();
+      let greeting = "";
+
+      if (hour >= 5 && hour < 12) {
+        greeting = "Good Morning!";
+      } else if (hour >= 12 && hour < 18) {
+        greeting = "Good Afternoon!";
+      } else {
+        greeting = "Good Evening!";
       }
 
-      toggleBtn.addEventListener('click', () => {
-        document.documentElement.classList.toggle('dark');
-        const isDark = document.documentElement.classList.contains('dark');
-        icon.classList.toggle('fa-moon', !isDark);
-        icon.classList.toggle('fa-sun', isDark);
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-      });
-    </script>
-  </body>
+      document.getElementById("greeting").textContent = greeting;
+    }
+
+    // Run once when page loads
+    updateGreeting();
+
+    // Update every minute
+    setInterval(updateGreeting, 60000);
+  </script>
+</body>
 
 </html>
