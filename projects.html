@@ -1,197 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Min Thuta Naing's Portfolio</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Projects by Min Thuta Naing, featuring full-stack development, AI integration, and cloud deployment." />
+    <title>Projects | Min Thuta Naing</title>
 
-        <!-- for the dark mode  -->
-        <script>
-            if (localStorage.getItem('theme') === 'dark') {
+    <!-- for the dark mode  -->
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
             document.documentElement.classList.add('dark');
-            }
-        </script>
+        }
+    </script>
 
-        <!-- Tailwind CDN -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
             darkMode: 'class',
-            }
-        </script>
+        }
+    </script>
 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 
-        <!-- Optimize font loading -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Optimize font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <!-- Roboto Condensed full family -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Roboto Condensed full family -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-        <!-- Loads both Nunito and Roboto Condensed (all weights and styles) -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Loads both Nunito and Roboto Condensed (all weights and styles) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-        <link rel="stylesheet" href="styles.css" />
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <body class="font-inter bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
-        <header class="fixed top-0 left-0 w-full h-16 bg-[#7D6E83] dark:bg-gray-800 shadow-md z-50">
-            <div class="container mx-auto flex items-center justify-start h-full px-4">
-                <button 
-                    class="flex items-center justify-center bg-[#7D6E83] hover:text-[#FFC4E1] text-white font-nunito px-4 py-2 rounded" 
-                    onclick="history.back()">
-                    <i class="fas fa-arrow-left mr-2"></i>
-                    Back
-                </button>
+<body class="font-inter bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+    <header class="fixed top-0 left-0 w-full h-16 bg-[#7D6E83] dark:bg-gray-800 shadow-md z-50">
+        <div class="container mx-auto flex items-center justify-between h-full px-4">
+            <a href="index.html" class="text-xl font-semibold font-nunito text-white">Min Thuta Naing</a>
+            <nav>
+                <ul class="flex flex-wrap items-center gap-4 text-gray-100 font-nunito">
+                    <li><a href="index.html" class="hover:text-[#FFC4E1] transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-[#FFC4E1] transition">About</a></li>
+                    <li><a href="projects.html" class="hover:text-[#FFC4E1] transition">Projects</a></li>
+                    <li><a href="papers.html" class="hover:text-[#FFC4E1] transition">Papers</a></li>
+                    <li>
+                        <button id="theme-toggle" class="text-white hover:text-yellow-300 transition text-xl">
+                            <i id="theme-icon" class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="pt-32 pb-32 min-h-screen bg-[#FEFCF3] dark:bg-gray-900 px-6 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto space-y-6">
+            <div class="pb-6">
+                <h1 class="text-3xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Projects</h1>
+                <p class="max-w-3xl text-gray-700 dark:text-gray-300">A selection of my recent software projects,
+                    highlighting full-stack architecture, AI and biometric integration, and cloud deployment.</p>
             </div>
-        </header>
 
+            <article
+                class="border border-[#7D6E83] dark:border-gray-600 rounded-3xl bg-white/90 dark:bg-gray-950/80 p-6 shadow-sm">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                    <div>
+                        <h2 class="text-2xl font-semibold font-nunito text-gray-800 dark:text-gray-100">Attendance
+                            Checking System</h2>
+                        <p class="mt-2 text-sm text-[#7D6E83]">React · Django · DeepFace · Gunicorn · Nginx · Cloudflare
+                        </p>
+                    </div>
+                    <span
+                        class="inline-flex items-center rounded-full bg-[#B0DB9C] px-3 py-1 text-sm text-[#1F2937]">Individual
+                        project</span>
+                </div>
+                <p class="mt-4 text-gray-700 dark:text-gray-300">Built an employee attendance platform with facial
+                    recognition and location validation to reduce manual attendance checks.</p>
+                <ul class="mt-4 text-gray-700 dark:text-gray-300 list-disc pl-5 space-y-2">
+                    <li>Implemented DeepFace (FaceNet) for reliable facial recognition and Geopy for location-aware
+                        attendance.</li>
+                    <li>Designed Django APIs and deployed the backend with Gunicorn, Nginx, and Cloudflare DNS.</li>
+                    <li>Improved reliability and user experience for employee check-ins.</li>
+                </ul>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <a href="https://github.com/min-thuta-naing/attendance-checking-by-min-thuta-naing" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center px-4 py-2 bg-[#7D6E83] text-white rounded hover:bg-[#63576A] transition">
+                        <i class="fas fa-link mr-2"></i>View Repository
+                    </a>
+                    <span class="inline-flex items-center rounded-full border border-[#7D6E83] px-3 py-1 text-sm text-[#7D6E83]">AI-enabled
+                        attendance</span>
+                </div>
+            </article>
 
-        <main class="pt-32 pb-32 min-h-screen bg-[#FEFCF3] dark:bg-gray-900 px-6 transition-colors duration-300">
-            <div class="max-w-7xl mx-auto ">
-                <div class="pb-6"> 
-                    <h1 class="text-3xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Projects</h1>
+            <article
+                class="border border-[#7D6E83] dark:border-gray-600 rounded-3xl bg-white/90 dark:bg-gray-950/80 p-6 shadow-sm">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                    <div>
+                        <h2 class="text-2xl font-semibold font-nunito text-gray-800 dark:text-gray-100">Koalytics –
+                            Biometric Usability Testing Platform</h2>
+                        <p class="mt-2 text-sm text-[#7D6E83]">Django · React · Mediapipe · DeepFace · OpenCV</p>
+                    </div>
+                    <span
+                        class="inline-flex items-center rounded-full bg-[#B0DB9C] px-3 py-1 text-sm text-[#1F2937]">Senior
+                        project</span>
                 </div>
-                <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
-                    <p class="text-lg text-black dark:text-gray-300 font-semibold font-nunito pb-3">
-                        Project 1: Attendance Checking System (individual project) 
-                    </p>
-                    <p class="text-gray-700 dark:text-gray-300 font-nunito pb-2">
-                        <i>React, Django, DeepFace (Facenet model), Gunicorn and Nginx, Cloudflare</i>
-                    </p>
-                    <ul class="text-gray-700 dark:text-gray-300 font-nunito list-disc pl-5">
-                        <li>
-                            Developed the employee attendance checking platform 
-                        </li>
-                        <li>
-                            Used Facenet model (facial recognition) & Geopy (location) to check the attendance 
-                        </li>
-                        <li>
-                            Deployed on the Linux vps on Database Mart and used the Cloudflare DNS 
-                        </li>
-                    </ul>
-                    <a href="https://github.com/min-thuta-naing/attendance-checking-by-min-thuta-naing" 
-                        target="_blank"
-                        class="inline-block mt-4 px-4 py-2 bg-[#7D6E83] text-white font-nunito rounded hover:bg-[#63576A] transition">
-                        <i class="fas fa-link mr-2"></i>Visit GitHub Repository
+                <p class="mt-4 text-gray-700 dark:text-gray-300">Created a remote usability testing platform that
+                    captures facial expressions and emotion data during user testing.</p>
+                <ul class="mt-4 text-gray-700 dark:text-gray-300 list-disc pl-5 space-y-2">
+                    <li>Integrated Mediapipe FaceMesh and DeepFace to analyze users’ emotions while they interact with
+                        the interface.</li>
+                    <li>Worked as full-stack developer to connect Django backend services with a React frontend.</li>
+                    <li>Delivered a prototype for biometric-driven usability research and UX improvement.</li>
+                </ul>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <a href="https://github.com/min-thuta-naing/koalytics_biometric_usability_testing.git"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center px-4 py-2 bg-[#7D6E83] text-white rounded hover:bg-[#63576A] transition">
+                        <i class="fas fa-link mr-2"></i>View Repository
                     </a>
+                    <span class="inline-flex items-center rounded-full border border-[#7D6E83] px-3 py-1 text-sm text-[#7D6E83]">UX
+                        research</span>
+                </div>
+            </article>
 
+            <article
+                class="border border-[#7D6E83] dark:border-gray-600 rounded-3xl bg-white/90 dark:bg-gray-950/80 p-6 shadow-sm">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                    <div>
+                        <h2 class="text-2xl font-semibold font-nunito text-gray-800 dark:text-gray-100">MFU Hospital
+                            Website</h2>
+                        <p class="mt-2 text-sm text-[#7D6E83]">Vue.js · Strapi · Axios · Postman</p>
+                    </div>
+                    <span
+                        class="inline-flex items-center rounded-full bg-[#B0DB9C] px-3 py-1 text-sm text-[#1F2937]">Backend
+                        & API</span>
                 </div>
-                <!-- project 1 -->
-                <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
-                    <p class="text-lg text-black dark:text-gray-300 font-semibold font-nunito pb-3">
-                        Project 2: Koalytics - Biometric Usability Testing Platform (Senior Project)
-                    </p>
-                    <p class="text-gray-700 dark:text-gray-300 font-nunito pb-2">
-                        <i>Django (backend), React (frontend), Mediapipe, DeepFace, OpenCV</i>
-                    </p>
-                    <ul class="text-gray-700 dark:text-gray-300 font-nunito list-disc pl-5">
-                        <li>
-                            Developed the remote usability testing platform, which analyze and record users’ emotions by using Mediapipe FaceMesh and DeepFace for emotions recognition
-                        </li>
-                        <li>
-                            Contributed as a full-stack developer, collaborating with team members to integrate the Django backend and React frontend
-                        </li>
-                        <li>
-                            Implemented the critical thinking and problem solving skills to integrate the computer vision libraries and analysis of emotions 
-                        </li>
-                    </ul>
-                    <a href="https://github.com/min-thuta-naing/koalytics_biometric_usability_testing.git" 
-                        target="_blank"
-                        class="inline-block mt-4 px-4 py-2 bg-[#7D6E83] text-white font-nunito rounded hover:bg-[#63576A] transition">
-                        <i class="fas fa-link mr-2"></i>Visit GitHub Repository
+                <p class="mt-4 text-gray-700 dark:text-gray-300">Built a hospital website with a Strapi CMS backend and
+                    a Vue.js frontend to manage patient and service content.</p>
+                <ul class="mt-4 text-gray-700 dark:text-gray-300 list-disc pl-5 space-y-2">
+                    <li>Designed Strapi content models and integrated APIs with a Vue.js frontend.</li>
+                    <li>Managed API requests using Axios and tested endpoints with Postman.</li>
+                    <li>Delivered a structured website that supports dynamic content updates.</li>
+                </ul>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <a href="https://github.com/min-thuta-naing/mfu-smart-hospital.git" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center px-4 py-2 bg-[#7D6E83] text-white rounded hover:bg-[#63576A] transition">
+                        <i class="fas fa-link mr-2"></i>View Repository
                     </a>
+                    <span
+                        class="inline-flex items-center rounded-full border border-[#7D6E83] px-3 py-1 text-sm text-[#7D6E83]">CMS-powered</span>
                 </div>
-                <!-- project 2 -->
-                <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
-                    <p class="text-lg text-black dark:text-gray-300 font-semibold font-nunito pb-3">
-                        Project 3: MFU hospital website 
-                    </p>
-                    <p class="text-gray-700 dark:text-gray-300 font-nunito pb-2">
-                        <i>Vue.js, Strapi, Axios, Postman</i>
-                    </p>
-                    <ul class="text-gray-700 dark:text-gray-300 font-nunito list-disc pl-5">
-                        <li>
-                            Developed using Vue.js as frontend and Strapi (headless CMS) as backend to manage and store data                       
-                        </li>
-                        <li>
-                            Contributed as a backend developer 
-                        </li>
-                        <li>
-                            Took responsibility for the integrating API endpoints between Strapi and frontend 
-                        </li>
-                        <li>
-                            Used Axios to handle API requests, and used Postman to test the API endpoints during development 
-                        </li>
-                    </ul>
-                    <a href="https://github.com/min-thuta-naing/mfu-smart-hospital.git" 
-                        target="_blank"
-                        class="inline-block mt-4 px-4 py-2 bg-[#7D6E83] text-white font-nunito rounded hover:bg-[#63576A] transition">
-                        <i class="fas fa-link mr-2"></i>Visit GitHub Repository
-                    </a>
-                </div>
-                <!-- project 3 -->
-                <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
-                    <p class="text-lg text-black dark:text-gray-300 font-semibold font-nunito pb-3">
-                        Project 4: Koala - Tarot Mobile App
-                    </p>
-                    <p class="text-gray-700 dark:text-gray-300 font-nunito pb-2">
-                        <i>Flutter, Firebase</i>
-                    </p>
-                    <ul class="text-gray-700 dark:text-gray-300 font-nunito list-disc pl-5">
-                        <li>
-                            Developed the fortune telling tarot reading app using flutter and firebase                    
-                        </li>
-                        <li>
-                            Coordinated with the 7 member-team during the design and development
-                        </li>
-                        <li>
-                            Contributed as a full-stack developer to code some functional requirements
-                        </li>
-                        <li>
-                            Then, took responsibility for deploying the app in the Google Play Store 
-                        </li>
-                    </ul>
-                    <a href="https://github.com/min-thuta-naing/koala_tarot_app.git" 
-                        target="_blank"
-                        class="inline-block mt-4 px-4 py-2 bg-[#7D6E83] text-white font-nunito rounded hover:bg-[#63576A] transition">
-                        <i class="fas fa-link mr-2"></i>Visit GitHub Repository
-                    </a>
-                </div>
-                <!-- project 4 -->
-                <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
-                    <p class="text-lg text-black dark:text-gray-300 font-semibold font-nunito pb-3">
-                        Project 5: Ultimate Tic-Tac-Toe Website 
-                    </p>
-                    <p class="text-gray-700 dark:text-gray-300 font-nunito pb-2">
-                        <i>Java (Spring), MySQL, Google Cloud </i>
-                    </p>
-                    <ul class="text-gray-700 dark:text-gray-300 font-nunito list-disc pl-5">
-                        <li>
-                            Engaged with the stakeholder for the functional requirements         
-                        </li>
-                        <li>
-                            Designed and developed using Spring framework with the MySQL to store the player data 
-                        </li>
-                        <li>
-                            Worked as a backend developer for efficient data storing and for effective workflow on the frontend 
-                        </li>
-                        <li>
-                            Then, took responsibility for deploying the website on the Google Cloud 
-                        </li>
-                    </ul>
-                    <a href="https://github.com/min-thuta-naing/ultimate-tic-tac-toe.git" 
-                        target="_blank"
-                        class="inline-block mt-4 px-4 py-2 bg-[#7D6E83] text-white font-nunito rounded hover:bg-[#63576A] transition">
-                        <i class="fas fa-link mr-2"></i>Visit GitHub Repository
-                    </a>
-                </div>
-            </div>
-        </main>
+            </article>
 
-    </body>
+            <article
+                class="border border-[#7D6E83] dark:border-gray-600 rounded-3xl bg-white/90 dark:bg-gray-950/80 p-6 shadow-sm">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                    <div>
+                        <h2 class="text-2xl font-semibold font-nunito text-gray-800 dark:text-gray-100">Koala – Tarot
+                            Mobile App</h2>
+                        <p class="mt-2 text-sm text-[#7D6E83]">Flutter · Firebase</p>
+                    </div>
+                    <span
+                        class="inline-flex items-center rounded-full bg-[#B0DB9C] px-3 py-1 text-sm text-[#1F2937]">Mobile
+                        app</span>
+                </div>
+                <p class="mt-4 text-gray-700 dark:text-gray-300">Developed a tarot reading app with Firebase backend and
+                    participated in the Google Play Store deployment process.</p>
+                <ul class="mt-4 text-gray-700 dark:text-gray-300 list-disc pl-5 space-y-2">
+                    <li>Built interactive mobile features with Flutter and connected them to Firebase services.</li>
+                    <li>Collaborated on design and development with a 7-member team.</li>
+                    <li>Provided app deployment support for the Google Play Store launch.</li>
+                </ul>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <a href="https://github.com/min-thuta-naing/koala_tarot_app.git" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center px-4 py-2 bg-[#7D6E83] text-white rounded hover:bg-[#63576A] transition">
+                        <i class="fas fa-link mr-2"></i>View Repository
+                    </a>
+                    <span class="inline-flex items-center rounded-full border border-[#7D6E83] px-3 py-1 text-sm text-[#7D6E83]">Google Play Store
+                        deployment</span>
+                </div>
+            </article>
+
+            <article
+                class="border border-[#7D6E83] dark:border-gray-600 rounded-3xl bg-white/90 dark:bg-gray-950/80 p-6 shadow-sm">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                    <div>
+                        <h2 class="text-2xl font-semibold font-nunito text-gray-800 dark:text-gray-100">Ultimate
+                            Tic-Tac-Toe Website</h2>
+                        <p class="mt-2 text-sm text-[#7D6E83]">Java (Spring) · MySQL · Google Cloud</p>
+                    </div>
+                    <span
+                        class="inline-flex items-center rounded-full bg-[#B0DB9C] px-3 py-1 text-sm text-[#1F2937]">Backend
+                        & cloud</span>
+                </div>
+                <p class="mt-4 text-gray-700 dark:text-gray-300">Designed and deployed a game website with backend
+                    services, persistent data storage, and cloud hosting.</p>
+                <ul class="mt-4 text-gray-700 dark:text-gray-300 list-disc pl-5 space-y-2">
+                    <li>Managed stakeholder requirements and implemented backend services using Spring.</li>
+                    <li>Stored player data in MySQL and optimized backend workflows for gameplay.</li>
+                    <li>Deployed the project on Google Cloud to support real-world access.</li>
+                </ul>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <a href="https://github.com/min-thuta-naing/ultimate-tic-tac-toe.git" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center px-4 py-2 bg-[#7D6E83] text-white rounded hover:bg-[#63576A] transition">
+                        <i class="fas fa-link mr-2"></i>View Repository
+                    </a>
+                    <span
+                        class="inline-flex items-center rounded-full border border-[#7D6E83] px-3 py-1 text-sm text-[#7D6E83]">Google Cloud-hosted</span>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const icon = document.getElementById('theme-icon');
+
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            icon.classList.toggle('fa-moon', !isDark);
+            icon.classList.toggle('fa-sun', isDark);
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    </script>
+
+</body>
+
 </html>
-

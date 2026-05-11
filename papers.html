@@ -1,95 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Min Thuta Naing's Portfolio</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Research and publications by Min Thuta Naing, including usability research and biometric testing for LMS design." />
+    <title>Research & Publications | Min Thuta Naing</title>
 
-        <!-- for the dark mode  -->
-        <script>
-            if (localStorage.getItem('theme') === 'dark') {
+    <!-- for the dark mode  -->
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
             document.documentElement.classList.add('dark');
-            }
-        </script>
+        }
+    </script>
 
-        <!-- Tailwind CDN -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
             darkMode: 'class',
-            }
-        </script>
+        }
+    </script>
 
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 
-        <!-- Optimize font loading -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Optimize font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <!-- Roboto Condensed full family -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Roboto Condensed full family -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-        <!-- Loads both Nunito and Roboto Condensed (all weights and styles) -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Loads both Nunito and Roboto Condensed (all weights and styles) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-        <link rel="stylesheet" href="styles.css" />
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <body class="font-inter bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
-        <header class="fixed top-0 left-0 w-full h-16 bg-[#7D6E83] dark:bg-gray-800 shadow-md z-50">
-            <div class="container mx-auto flex items-center justify-start h-full px-4">
-                <button 
-                    class="flex items-center justify-center bg-[#7D6E83] hover:text-[#FFC4E1] text-white font-nunito px-4 py-2 rounded" 
-                    onclick="history.back()">
-                    <i class="fas fa-arrow-left mr-2"></i>
-                    Back
-                </button>
+<body class="font-inter bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+    <header class="fixed top-0 left-0 w-full h-16 bg-[#7D6E83] dark:bg-gray-800 shadow-md z-50">
+        <div class="container mx-auto flex items-center justify-between h-full px-4">
+            <a href="index.html" class="text-xl font-semibold font-nunito text-white">Min Thuta Naing</a>
+            <nav>
+                <ul class="flex flex-wrap items-center gap-4 text-gray-100 font-nunito">
+                    <li><a href="index.html" class="hover:text-[#FFC4E1] transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-[#FFC4E1] transition">About</a></li>
+                    <li><a href="projects.html" class="hover:text-[#FFC4E1] transition">Projects</a></li>
+                    <li><a href="papers.html" class="hover:text-[#FFC4E1] transition">Papers</a></li>
+                    <li>
+                        <button id="theme-toggle" class="text-white hover:text-yellow-300 transition text-xl">
+                            <i id="theme-icon" class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="pt-32 pb-32 min-h-screen bg-[#FEFCF3] dark:bg-gray-900 px-6 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto space-y-6">
+            <div class="pb-6">
+                <h1 class="text-3xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Research &
+                    Publications</h1>
+                <p class="max-w-3xl text-gray-700 dark:text-gray-300">Selected research work focusing on usability,
+                    biometric testing, and LMS design improvements.</p>
             </div>
-        </header>
-
-
-        <main class="pt-32 pb-32 min-h-screen bg-[#FEFCF3] dark:bg-gray-900 px-6 transition-colors duration-300">
-            <div class="max-w-7xl mx-auto ">
-                <div class="pb-6"> 
-                    <h1 class="text-3xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Researchs/ Papers</h1>
+            <article
+                class="border border-[#7D6E83] dark:border-gray-600 rounded-3xl bg-white/90 dark:bg-gray-950/80 p-6 shadow-sm">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                    <div>
+                        <h2 class="text-2xl font-semibold font-nunito text-gray-800 dark:text-gray-100">Enhancing LMS
+                            Design through SUS Analysis and Biometric Usability Testing</h2>
+                        <p class="mt-2 text-sm text-[#7D6E83]">2025 ECTI DAMT & NCON Conference · IEEE</p>
+                    </div>
+                    <span
+                        class="inline-flex items-center rounded-full bg-[#C6E7FF] px-3 py-1 text-sm text-[#1F2937]">Conference
+                        paper</span>
                 </div>
-                <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
-                    <p class="text-lg text-black dark:text-gray-300 font-semibold font-nunito pb-3">
-                        Title: Enhancing LMS Design through SUS Analysis and Biometric Usability Testing.
-                    </p>
-                    <p class="text-gray-700 dark:text-gray-300 font-nunito">
-                        ThutaNaing, M., SinTun, S., PyoneThu, S., YuYuKyaw, S., Jakkaew, P. (2025, January).
-                    </p>
-                    <p class="text-gray-700 dark:text-gray-300 font-nunito">
-                        In 2025 Joint International Conference on Digital
-                        Arts, Media and Technology with ECTI Northern Section Conference on Electrical, Electronics, Computer
-                        and Telecommunications Engineering (ECTI DAMT & NCON) (pp. 232-237). IEEE.
-                    </p>
-                    <ul class="text-gray-700 dark:text-gray-300 font-nunito list-disc pl-5">
-                        <li>
-                            Conducted system usability scale (SUS) analysis and usability testings on LMS website of MFU             
-                        </li>
-                        <li>
-                            Cooperated in survey collection of 417 participants to collect the SUS surveys 
-                        </li>
-                        <li>
-                            Led the usability testing sessions, being able to identify usability flaws and system complexity
-                        </li>
-                        <li>
-                            Analyzed the findings and submitted our paper to the conference
-                        </li>
-                    </ul>
-                    <a href="papers/lms-design-sus-biometric.pdf" 
-                        download 
-                        class="inline-block mt-4 px-4 py-2 bg-[#7D6E83] text-white font-nunito rounded hover:bg-[#63576A] transition">
+                <p class="mt-4 text-gray-700 dark:text-gray-300">Conducted usability testing on an LMS website using SUS
+                    surveys and biometric analysis to find usability issues and recommend design improvements.</p>
+                <ul class="mt-4 text-gray-700 dark:text-gray-300 list-disc pl-5 space-y-2">
+                    <li>Conducted SUS analysis and biometric usability testing on the MFU LMS website.</li>
+                    <li>Collected and analyzed survey responses from 417 participants.</li>
+                    <li>Led usability sessions to identify interface friction and user confusion.</li>
+                    <li>Submitted findings to an international IEEE conference for publication.</li>
+                </ul>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <a href="papers/lms-design-sus-biometric.pdf" download rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center px-4 py-2 bg-[#7D6E83] text-white rounded hover:bg-[#63576A] transition">
                         <i class="fas fa-download mr-2"></i>Download Paper (PDF)
                     </a>
                 </div>
-            </div>
-        </main>
+            </article>
+        </div>
+    </main>
 
-    </body>
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const icon = document.getElementById('theme-icon');
+
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            icon.classList.toggle('fa-moon', !isDark);
+            icon.classList.toggle('fa-sun', isDark);
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    </script>
+
+</body>
+
 </html>
-

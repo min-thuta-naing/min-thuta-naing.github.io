@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Min Thuta Naing's Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Min Thuta Naing, a Software Engineer building user-friendly web, mobile, and AI-driven applications." />
+  <title>Min Thuta Naing | Software Engineering Portfolio</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -40,9 +42,10 @@
   <!-- header of the page -->
   <header class="fixed top-0 left-0 w-full h-16 bg-[#7D6E83] dark:bg-gray-800 shadow-md z-50">
     <div class="container mx-auto flex items-center justify-between p-4">
-      <h1 class="text-xl font-semibold font-nunito text-white">Portfolio</h1>
+      <a href="index.html" class="text-xl font-semibold font-nunito text-white">Min Thuta Naing</a>
       <nav>
-        <ul class="flex space-x-6 text-gray-100 font-nunito items-center">
+        <ul class="flex flex-wrap items-center gap-4 text-gray-100 font-nunito">
+          <li><a href="index.html" class="hover:text-[#FFC4E1] transition">Home</a></li>
           <li><a href="about.html" class="hover:text-[#FFC4E1] transition">About</a></li>
           <li><a href="projects.html" class="hover:text-[#FFC4E1] transition">Projects</a></li>
           <li><a href="papers.html" class="hover:text-[#FFC4E1] transition">Papers</a></li>
@@ -62,7 +65,8 @@
       <!-- Left column (1/4) -->
       <div class="md:w-1/4 w-full flex flex-col items-center gap-6">
         <!-- Profile Photo -->
-        <div class="w-64 h-70 bg-white bg-opacity-30 backdrop-blur-md rounded overflow-hidden dark:bg-opacity-10">
+        <div
+          class="w-full max-w-[20rem] aspect-[5/6] bg-white bg-opacity-30 backdrop-blur-md rounded overflow-hidden dark:bg-opacity-10">
           <img src="./images/profile-casual.jpg" alt="Profile Photo" class="w-full h-full object-cover rounded-xl" />
         </div>
         <!-- Social Links -->
@@ -85,89 +89,96 @@
           </a>
         </div>
         <!-- Download Buttons -->
-        <div class="flex flex-col gap-2 w-64"> <!-- same width as social icons row -->
-            <a href="papers/MinThutaNaing_Resume.pdf" 
-              download 
-              class="w-full px-4 py-2 bg-[#B0DB9C] text-black font-nunito hover:bg-[#8DAF7D] transition flex justify-center items-center">
-              <i class="fas fa-download mr-2"></i>Download Resume
-            </a>
-            <a href="papers/MinThutaNaing_Portfolio.pdf" 
-              download 
-              class="w-full px-4 py-2 bg-[#F5DAD2] text-black font-nunito hover:bg-[#C4AEA8] transition flex justify-center items-center">
-              <i class="fas fa-download mr-2"></i>Download Portfolio
-            </a>
-            <a href="papers/Min Thuta Naing - Transcript 2025.pdf" 
-              download 
-              class="w-full px-4 py-2 bg-[#C6E7FF] text-black font-nunito hover:bg-[#9EB8CC] transition flex justify-center items-center">
-              <i class="fas fa-download mr-2"></i>Download Transcript
-            </a>
+        <div class="flex flex-col gap-2 w-full max-w-[20rem]"> <!-- same width as social icons row -->
+          <a href="papers/MinThutaNaing_Resume.pdf" download
+            class="w-full px-4 py-2 bg-[#B0DB9C] text-black font-nunito hover:bg-[#8DAF7D] transition flex justify-center items-center">
+            <i class="fas fa-download mr-2"></i>Download Resume
+          </a>
+          <a href="papers/MinThutaNaing_Portfolio.pdf" download
+            class="w-full px-4 py-2 bg-[#F5DAD2] text-black font-nunito hover:bg-[#C4AEA8] transition flex justify-center items-center">
+            <i class="fas fa-download mr-2"></i>Download Portfolio
+          </a>
+          <a href="papers/Min Thuta Naing - Transcript 2025.pdf" download
+            class="w-full px-4 py-2 bg-[#C6E7FF] text-black font-nunito hover:bg-[#9EB8CC] transition flex justify-center items-center">
+            <i class="fas fa-download mr-2"></i>Download Transcript
+          </a>
         </div>
       </div>
 
       <!-- Right column (3/4) -->
       <div class="md:w-3/4 w-full space-y-8">
 
-        <!-- greeting words -->
-        <div>
-          <h1 id="greeting" class="text-4xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">
-            Hi there!
+        <!-- Hero section -->
+        <section
+          class="rounded-3xl border border-[#7D6E83] dark:border-gray-600 bg-white/90 dark:bg-gray-950/80 shadow-sm p-8">
+          <p class="text-sm uppercase tracking-[0.35em] text-[#7D6E83] mb-4">Software Engineer • UX-focused • AI-powered
+          </p>
+          <h1 id="greeting"
+            class="text-4xl sm:text-5xl font-semibold font-nunito text-gray-800 dark:text-gray-100 leading-tight mb-4">
+            Hello there! I’m Min Thuta Naing.
           </h1>
-          <h1 class="text-3xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">I am Min Thuta Naing (มิน ตูตะ นาย).
-          </h1>
-        </div>
+          <p class="text-2xl sm:text-3xl font-semibold text-gray-700 dark:text-gray-300 max-w-3xl">
+            I build user-friendly web, mobile, and AI-driven applications with strong UX and cloud deployment.
+          </p>
+          <p class="mt-6 text-gray-700 dark:text-gray-300 max-w-2xl">
+            Recent Software Engineering graduate with hands-on experience in React, Django, Flutter, and computer
+            vision. I create real products that improve usability, automate workflows, and support business needs.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="rounded-full border border-[#7D6E83] px-3 py-1 text-sm text-[#7D6E83]">React</span>
+            <span class="rounded-full border border-[#7D6E83] px-3 py-1 text-sm text-[#7D6E83]">Django</span>
+            <span class="rounded-full border border-[#7D6E83] px-3 py-1 text-sm text-[#7D6E83]">Flutter</span>
+            <span class="rounded-full border border-[#7D6E83] px-3 py-1 text-sm text-[#7D6E83]">AI / CV</span>
+            <span class="rounded-full border border-[#7D6E83] px-3 py-1 text-sm text-[#7D6E83]">Cloud Deployment</span>
+          </div>
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="projects.html"
+              class="inline-flex items-center justify-center px-5 py-3 bg-[#7D6E83] text-white rounded-lg hover:bg-[#63576A] transition">
+              View Projects
+            </a>
+            <a href="papers/MinThutaNaing_Resume.pdf" download
+              class="inline-flex items-center justify-center px-5 py-3 bg-[#F5DAD2] text-black rounded-lg hover:bg-[#C4AEA8] transition">
+              Download Resume
+            </a>
+          </div>
+        </section>
 
-
-        <!-- <a href="papers/MinThutaNaing_Resume.pdf" 
-            download 
-            class="inline-block mt-4 px-4 py-2 bg-[#7D6E83] text-white font-nunito hover:bg-[#63576A] transition">
-            <i class="fas fa-download mr-2"></i>Download Resume
-        </a>
-        <a href="papers/MinThutaNaing_Portfolio.pdf" 
-            download 
-            class="inline-block mt-4 px-4 py-2 bg-[#7D6E83] text-white font-nunito hover:bg-[#63576A] transition">
-            <i class="fas fa-download mr-2"></i>Download Portfolio
-        </a>
-        <a href="papers/Min Thuta Naing - Transcript 2025.pdf" 
-            download 
-            class="inline-block mt-4 px-4 py-2 bg-[#7D6E83] text-white font-nunito hover:bg-[#63576A] transition">
-            <i class="fas fa-download mr-2"></i>Download Transcript 
-        </a> -->
+        <!-- About Me -->
 
 
 
         <!-- About Me -->
-        <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
+        <div
+          class="border border-[#7D6E83] dark:border-gray-600 p-6 rounded-3xl bg-white/90 dark:bg-gray-950/80 shadow-sm">
           <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">About Me</h2>
           <p class="text-gray-700 dark:text-gray-300 font-nunito text-justify">
-            I am a freshly graduated Software Engineering student, who graduated from Mae Fah Luang University in Chaing
-            Rai, Thailand. 
-            I am a motivated and collaborative person who always eager to learn. I am also competent to work both independently and in group on any projects, with a strong interest in Full-stack Development, Software Testings, UI/UX design and Artificial Intelligence.
-
+            I am a recent Software Engineering graduate from Mae Fah Luang University in Chiang Rai, Thailand. I’m
+            motivated, collaborative, and always eager to learn. I work effectively both independently and in teams,
+            with strong interests in full-stack development, software testing, UI/UX design, and artificial
+            intelligence.
           </p>
 
-          <div class="pt-5 flex gap-6"> 
-            <!-- Buttons -->
-            <a href="/about.html" 
-              class="px-4 py-2 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+          <div class="pt-5 flex flex-col sm:flex-row sm:flex-wrap gap-3">
+            <a href="about.html"
+              class="px-4 py-2 inline-flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white rounded transition">
               More About Me
             </a>
-            <a href="/projects.html" 
-              class="px-4 py-2 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+            <a href="projects.html"
+              class="px-4 py-2 inline-flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white rounded transition">
               View Projects
             </a>
-            <a href="/papers.html" 
-              class="px-4 py-2 flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white transition">
+            <a href="papers.html"
+              class="px-4 py-2 inline-flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white rounded transition">
               View Published Papers
             </a>
           </div>
-          
         </div>
 
         <!-- Interest area -->
-        <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
+        <div
+          class="border border-[#7D6E83] dark:border-gray-600 p-6 rounded-3xl bg-white/90 dark:bg-gray-950/80 shadow-sm">
           <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Area of Interest</h2>
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300 font-nunito text-left">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300 font-nunito text-left">
             <span>✦ Web & Mobile Development</span>
             <span>✦ DevOps</span>
             <span>✦ UI/UX</span>
@@ -177,7 +188,8 @@
         </div>
 
         <!-- Education -->
-        <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
+        <div
+          class="border border-[#7D6E83] dark:border-gray-600 p-6 rounded-3xl bg-white/90 dark:bg-gray-950/80 shadow-sm">
           <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Education</h2>
           <table class="text-gray-700 dark:text-gray-300 font-nunito w-full">
             <tr>
@@ -190,7 +202,8 @@
         </div>
 
         <!-- Work Experience -->
-        <div class="border border-[#7D6E83] dark:border-gray-600 p-6">
+        <div
+          class="border border-[#7D6E83] dark:border-gray-600 p-6 rounded-3xl bg-white/90 dark:bg-gray-950/80 shadow-sm">
           <h2 class="text-xl font-semibold font-nunito text-gray-800 dark:text-gray-100 mb-4">Work Experience</h2>
           <table class="text-gray-700 dark:text-gray-300 font-nunito w-full">
             <tr>
