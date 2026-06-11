@@ -111,7 +111,7 @@
           </a>
         </div>
         <!-- Download Buttons -->
-        <div class="flex flex-col gap-2 w-full max-w-[20rem]"> <!-- same width as social icons row -->
+        <!-- <div class="flex flex-col gap-2 w-full max-w-[20rem]">
           <a href="papers/MinThutaNaing_Resume.pdf" download
             class="w-full px-4 py-2 bg-[#B0DB9C] text-black font-nunito hover:bg-[#8DAF7D] transition flex justify-center items-center">
             <i class="fas fa-download mr-2"></i>Download Resume
@@ -124,7 +124,7 @@
             class="w-full px-4 py-2 bg-[#C6E7FF] text-black font-nunito hover:bg-[#9EB8CC] transition flex justify-center items-center">
             <i class="fas fa-download mr-2"></i>Download Transcript
           </a>
-        </div>
+        </div> -->
       </div>
 
       <!-- Right column (3/4) -->
@@ -133,7 +133,7 @@
         <!-- Hero section -->
         <section
           class="rounded-3xl border border-[#7D6E83] dark:border-gray-600 bg-white/90 dark:bg-gray-950/80 shadow-sm p-8">
-          <p class="text-sm uppercase tracking-[0.35em] text-[#7D6E83] mb-4">Software Engineer • UX-focused • AI-powered
+          <p class="text-sm uppercase tracking-[0.35em] text-[#7D6E83] mb-4">Software Engineer • UX-focused
           </p>
           <h1 id="greeting"
             class="text-4xl sm:text-5xl font-semibold font-nunito text-gray-800 dark:text-gray-100 leading-tight mb-4">
@@ -162,6 +162,10 @@
               class="inline-flex items-center justify-center px-5 py-3 bg-[#F5DAD2] text-black rounded-lg hover:bg-[#C4AEA8] transition">
               Download Resume
             </a>
+            <a href="papers/Min Thuta Naing - Transcript 2025.pdf" download
+              class="inline-flex items-center justify-center px-5 py-3 bg-[#F5DAD2] text-black rounded-lg hover:bg-[#C4AEA8] transition">
+              Download Transcript
+            </a>
           </div>
         </section>
 
@@ -182,14 +186,10 @@
               class="px-4 py-2 inline-flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white rounded transition">
               More About Me
             </a>
-            <a href="projects.html"
-              class="px-4 py-2 inline-flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white rounded transition">
-              View Projects
-            </a>
-            <a href="papers.html"
+            <!-- <a href="papers.html"
               class="px-4 py-2 inline-flex items-center justify-center bg-[#7D6E83] hover:bg-[#63576A] text-white rounded transition">
               View Published Papers
-            </a>
+            </a> -->
           </div>
         </div>
 
@@ -226,7 +226,18 @@
           <table class="text-gray-700 dark:text-gray-300 font-nunito w-full">
             <tr>
               <td class="pr-4 whitespace-nowrap align-top">Jan - April (2026)</td>
-              <td>(INTERNSHIP) Worked as Web Developer at Trinity Securiites Co.,Ltd.</td>
+              <td class="align-top">
+                <div>(INTERNSHIP) Worked as Web Developer at Trinity Securiites Co.,Ltd.</div>
+                <div class="mt-2">
+                  <button id="cert-toggle-btn" class="inline-flex items-center gap-2 text-sm text-[#7D6E83] dark:text-[#FFC4E1] hover:text-[#63576A] dark:hover:text-white font-semibold transition focus:outline-none" aria-expanded="false" aria-controls="cert-dropdown">
+                    <i id="cert-chevron" class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                    <span>View Certificate</span>
+                  </button>
+                  <div id="cert-dropdown" class="hidden mt-3 max-w-xl border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-md bg-white dark:bg-gray-800">
+                    <img src="certifications/intern_certifications/trinity_intern.PNG" alt="Trinity Internship Certificate" class="w-full h-auto object-contain" />
+                  </div>
+                </div>
+              </td>
             </tr>
           </table>
 
@@ -290,6 +301,17 @@
       const menuOpen = !mobileMenu.classList.toggle('hidden');
       mobileMenuIcon.classList.toggle('fa-bars', !menuOpen);
       mobileMenuIcon.classList.toggle('fa-xmark', menuOpen);
+    });
+
+    // Certificate Dropdown Toggle
+    const certToggleBtn = document.getElementById('cert-toggle-btn');
+    const certDropdown = document.getElementById('cert-dropdown');
+    const certChevron = document.getElementById('cert-chevron');
+
+    certToggleBtn?.addEventListener('click', () => {
+      const isHidden = certDropdown.classList.toggle('hidden');
+      certChevron.classList.toggle('rotate-180', !isHidden);
+      certToggleBtn.setAttribute('aria-expanded', !isHidden);
     });
   </script>
 
